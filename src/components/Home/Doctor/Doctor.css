@@ -1,0 +1,11 @@
+.doctor-info {
+  border: 1px solid gray;
+  margin: 5px;
+  border-radius: 8px;
+  background-color: whitesmoke;
+}
+.doctor-info img {
+  height: 270px;
+  width: 100%;
+  border-radius: 8px;
+}

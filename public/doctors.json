@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "doctor_name": "Berthe Standage",
+    "company_name": "Northern Welding Supply",
+    "description": "Ped on rolr-skt inj in clsn w nonmtr vehicle nontraf, sqla",
+    "img": "https://i.ibb.co/y6xrmJZ/team-1.jpg"
+  },
+  {
+    "id": 2,
+    "doctor_name": "Starlin Ranvoise",
+    "company_name": "MAKEUP ART COSMETICS",
+    "description": "Disp fx of med malleolus of r tibia, 7thN",
+    "img": "https://i.ibb.co/kQJvttf/team-2.jpg"
+  },
+  {
+    "id": 3,
+    "doctor_name": "Joelly Paradis",
+    "company_name": "NCS HealthCare of KY, Inc dba Vangard Labs",
+    "description": "Acute post multifoc placoid pigment epitheliopathy, r eye",
+    "img": "https://i.ibb.co/zfYbVkD/team-3.jpg"
+  },
+  {
+    "id": 4,
+    "doctor_name": "Meryl Ayerst",
+    "company_name": "Empire Stationery Distributors Inc.",
+    "description": "Congenital partial dislocation of hip, unspecified",
+    "img": "https://i.ibb.co/g7DKSLt/team-4.jpg"
+  },
+  {
+    "id": 5,
+    "doctor_name": "Rici Streeter",
+    "company_name": "NCS HealthCare of KY, Inc dba Vangard Labs",
+    "description": "Emphysema (subcutaneous) resulting from a procedure",
+    "img": "https://i.ibb.co/RBvGWjq/team-5.jpg"
+  },
+  {
+    "id": 6,
+    "doctor_name": "Blanca Parham",
+    "company_name": "Cardinal Health",
+    "description": "Japanese encephalitis",
+    "img": "https://i.ibb.co/FzKYv6g/team-6.jpg"
+  },
+  {
+    "id": 7,
+    "doctor_name": "Siobhan Rockwill",
+    "company_name": "ALK-Abello, Inc.",
+    "description": "Cyst of epididymis",
+    "img": "https://i.ibb.co/99LdzMT/team-7.jpg"
+  },
+  {
+    "id": 8,
+    "doctor_name": "Tanny Ponte",
+    "company_name": "RoadRunner Oxygen Service, Inc.",
+    "description": "Displ bimalleol fx r low leg, init for opn fx type 3A/B/C",
+    "img": "https://i.ibb.co/PzvRGS3/team-8.jpg"
+  },
+  {
+    "id": 9,
+    "doctor_name": "Laurence McBeith",
+    "company_name": "Antigen Laboratories, Inc.",
+    "description": "Nondisp Maisonneuve's fx l leg, 7thN",
+    "img": "https://i.ibb.co/pnYzkQn/team-9.jpg"
+  }
+]
