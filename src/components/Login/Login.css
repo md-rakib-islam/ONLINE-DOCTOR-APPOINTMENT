@@ -1,0 +1,30 @@
+.body {
+  /* background: #b2d1f3;
+  background: linear-gradient(to right, #99b0ce, #b4c5d3); */
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.body a {
+  text-decoration: none;
+}
+.input-field {
+  width: 130%;
+}
+.form-container {
+  border: 1px solid gray;
+  border-width: 130%;
+}
+
+.btn-login {
+  width: 130%;
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  padding: 0.75rem 1rem;
+}
+
+.btn-google {
+  width: 130%;
+  color: rgb(8, 8, 8) !important;
+  background-color: tomato !important;
+}
