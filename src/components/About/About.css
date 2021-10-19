@@ -1,0 +1,21 @@
+.container-about {
+  display: flex;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.about-text {
+  text-align: justify;
+  margin-left: 60px;
+  transition-duration: 0.9s;
+}
+
+.about-text:hover {
+  color: #056899;
+}
+
+.container-about img {
+  width: 400px;
+  height: 200px;
+  margin-bottom: 40px;
+}

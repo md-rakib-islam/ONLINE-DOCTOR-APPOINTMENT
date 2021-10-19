@@ -2,20 +2,23 @@ import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import useAuth from "../../../Hooks/useAuth";
+import "./Header.css";
 
 const Header = () => {
-  const { user, logOut } = useAuth();
+  const { user, logOut, isLogin } = useAuth();
   return (
     <>
       <Navbar
+        className="nav-bg"
         collapseOnSelect
         expand="lg"
-        bg="dark"
         variant="dark"
         sticky="top"
       >
-        <Container>
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+        <Container className="m-4">
+          <Navbar.Brand as={Link} to="/home">
+            BD Online Doctors
+          </Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
             <Nav.Link as={Link} to="/home">
@@ -27,9 +30,7 @@ const Header = () => {
             <Nav.Link as={Link} to="/department">
               Our Department
             </Nav.Link>
-            <Nav.Link as={Link} to="/services">
-              Services
-            </Nav.Link>
+
             <Nav.Link as={Link} to="/about">
               About US
             </Nav.Link>
@@ -41,7 +42,9 @@ const Header = () => {
               </Nav.Link>
             )}
             <Navbar.Text>
-              Welcome: <a href="#login">{user?.displayName}</a>
+              <p className="mt-3" style={{ color: "white" }}>
+                {isLogin ? user.email : user.displayName}
+              </p>
             </Navbar.Text>
           </Navbar.Collapse>
         </Container>

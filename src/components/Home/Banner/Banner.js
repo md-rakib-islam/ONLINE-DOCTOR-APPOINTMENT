@@ -4,7 +4,7 @@ import "./Banner.css";
 
 const Banner = () => {
   return (
-    <div>
+    <div className="mb-5">
       <Carousel>
         <Carousel.Item interval={1000}>
           <img
@@ -13,8 +13,11 @@ const Banner = () => {
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3>Keep yourself and others safe: Do it all!</h3>
+            <p>
+              Get vaccinated as soon as it’s your turn and follow local guidance
+              on vaccination.
+            </p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item interval={500}>
@@ -24,8 +27,11 @@ const Banner = () => {
             alt="Second slide"
           />
           <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>Wear a mask properly</h3>
+            <p>
+              Clean your hands before you put your mask on, before and after you
+              take it off, and after you touch it at any time.
+            </p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -35,9 +41,10 @@ const Banner = () => {
             alt="Third slide"
           />
           <Carousel.Caption>
-            <h3>Third slide label</h3>
+            <h3>Make your environment safer</h3>
             <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              Avoid the 3Cs: spaces that are closed, crowded or involve close
+              contact.
             </p>
           </Carousel.Caption>
         </Carousel.Item>

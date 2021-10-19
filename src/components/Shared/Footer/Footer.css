@@ -1,0 +1,79 @@
+.icon-inst {
+  margin: 5px;
+  padding: 5px;
+  font-size: 30px;
+  transition-duration: 0.9s;
+}
+
+.icon-facebook {
+  margin: 5px;
+  padding: 5px;
+  font-size: 30px;
+  transition-duration: 0.9s;
+}
+
+.icon-youtube {
+  margin: 5px;
+  padding: 5px;
+  font-size: 30px;
+  transition-duration: 0.9s;
+}
+
+.icon-twt {
+  margin: 5px;
+  padding: 5px;
+  font-size: 30px;
+  transition-duration: 0.9s;
+}
+
+.icon-twt:hover {
+  color: #1da1f2;
+}
+
+.icon-facebook:hover {
+  color: #093386;
+}
+
+.icon-youtube:hover {
+  color: #f8120a;
+}
+
+.icon-inst:hover {
+  color: #833ab4;
+}
+
+.footer-menu {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  list-style: none;
+  margin-top: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.footer-menu a {
+  text-decoration: none;
+}
+
+.footer-menu:hover {
+  color: rgb(128, 196, 223);
+}
+
+.footer-input {
+  padding: 8px;
+  border: none;
+  outline: none;
+  background-color: gray;
+}
+
+.footer-container {
+  background-color: rgba(20, 160, 157, 0.85);
+  padding: 50px;
+  color: rgb(0, 0, 0);
+}
+
+.foter-phone-icon {
+  font-size: 20px;
+  padding: 5px;
+  color: rgb(0, 0, 0);
+}

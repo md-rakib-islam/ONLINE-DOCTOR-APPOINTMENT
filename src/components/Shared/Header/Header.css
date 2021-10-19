@@ -1,0 +1,10 @@
+.nav-bg {
+  background-color: rgba(20, 160, 157, 0.85);
+}
+.nav-bg a {
+  color: whitesmoke;
+  font-size: 25px;
+}
+.nav-bg p {
+  font-size: 16px;
+}

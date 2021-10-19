@@ -12,6 +12,9 @@ const Login = () => {
     handleRagistration,
     handleEmailChange,
     handlePasswordChange,
+    toggleLogin,
+    isLogin,
+    error,
   } = useAuth();
 
   return (
@@ -20,7 +23,7 @@ const Login = () => {
         <form onSubmit={handleRagistration}>
           <div className="row mb-3">
             <h3 className="text-primary mb-5">
-              <b>Please Login</b>
+              <b>Please {isLogin ? "Login" : " Register"}</b>
             </h3>
             <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">
               Email
@@ -56,6 +59,7 @@ const Login = () => {
                 <input
                   className="form-check-input"
                   type="checkbox"
+                  onChange={toggleLogin}
                   id="gridCheck1"
                 />
                 <label className="form-check-label" htmlFor="gridCheck1">
@@ -64,12 +68,24 @@ const Login = () => {
               </div>
             </div>
           </div>
-          <div className="row mb-3 text-danger"> </div>
+          <div className="row mb-3 text-danger">
+            {" "}
+            <b>{error}</b>
+          </div>
           <button type="submit" className="btn btn-primary">
-            Login
+            {isLogin ? "Login" : "Register"}
           </button>
           <button type="button" className="btn btn-link">
             Forget Passwor?
+          </button>
+          <p>or</p>
+          <button
+            type="submit"
+            className="btn btn-google"
+            onClick={signInUsingGoogle}
+          >
+            <FontAwesomeIcon icon={faGoogle} style={{ color: "white" }} />{" "}
+            Google Sign In
           </button>
         </form>
       </div>

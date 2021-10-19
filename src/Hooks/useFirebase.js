@@ -19,6 +19,7 @@ const useFirebase = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [isLogin, setIsLogin] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   const auth = getAuth();
 
@@ -37,14 +38,22 @@ const useFirebase = () => {
       } else {
         setUser({});
       }
+      setIsLoading(false);
     });
     return () => unsubscribed;
   }, []);
 
   const logOut = () => {
-    signOut(auth).then(() => {});
+    setIsLoading(true);
+    signOut(auth)
+      .then(() => {})
+      .finally(() => setIsLoading(false));
   };
 
+  const toggleLogin = (e) => {
+    setIsLogin(e.target.checked);
+    setError("");
+  };
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
   };
@@ -52,13 +61,35 @@ const useFirebase = () => {
     setPassword(e.target.value);
   };
   const handleRagistration = (e) => {
-    console.log(email, password);
-    createUserWithEmailAndPassword(auth, email, password).then((result) => {
-      const user = result.user;
-      console.log(user);
-    });
-
     e.preventDefault();
+    console.log(email, password);
+
+    isLogin ? processLogin(email, password) : createNewUser(email, password);
+  };
+  const processLogin = (email, password) => {
+    setIsLoading(true);
+
+    signInWithEmailAndPassword(auth, email, password)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+        setError("");
+      })
+      .catch((error) => {
+        setError(error.message);
+      })
+      .finally(() => setIsLoading(false));
+  };
+  const createNewUser = (email, password) => {
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+        setError("");
+      })
+      .catch((error) => {
+        setError(error.message);
+      });
   };
 
   return {
@@ -69,6 +100,10 @@ const useFirebase = () => {
     handleEmailChange,
     handlePasswordChange,
     handleRagistration,
+    toggleLogin,
+    isLogin,
+    error,
+    isLoading,
   };
 };
 
