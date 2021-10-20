@@ -17,6 +17,6 @@ Here live link Please click this:<https://online-doctor-appointmen-da8b4.web.app
 
 - For telemedicine appointment you can call 10666 or 02 22 22 62 466.
 - After the initial appointment slot booking from United Hospital, you will need to pay in following ways:
-  ** By bKash mentioning his/her patient ID to 01914001264 (UHL Billing bKash Number)
-  ** By credit card, debit card, mobile banking
+  - By bKash mentioning his/her patient ID to 01914001264 (UHL Billing bKash Number)
+  - By credit card, debit card, mobile banking
 - Need to call to verify the payment. Unless payment is made 5-6 hours before telemedicine appointment time, appointment will not be confirmed.
