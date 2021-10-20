@@ -34,7 +34,6 @@ const Login = () => {
                 type="email"
                 className="form-control"
                 id="inputEmail3"
-                required
               />
             </div>
           </div>
@@ -48,7 +47,6 @@ const Login = () => {
                 type="password"
                 className="form-control"
                 id="inputPassword3"
-                required
               />
             </div>
           </div>
