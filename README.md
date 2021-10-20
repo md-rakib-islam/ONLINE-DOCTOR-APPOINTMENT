@@ -15,7 +15,7 @@ Here live link Please click this:<https://online-doctor-appointmen-da8b4.web.app
 
 ## Easy Steps to do a Tele/Video Consultation from Anywhere
 
-- For telemedicine appointment you can call 10666 or 02 22 22 62 466.
+- For telemedicine appointment you can call +8801704404410.
 - After the initial appointment slot booking from United Hospital, you will need to pay in following ways:
   - By bKash mentioning his/her patient ID to 01914001264 (UHL Billing bKash Number)
   - By credit card, debit card, mobile banking
